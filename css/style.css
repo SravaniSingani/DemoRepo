@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+}
+
+h1{
+    text-align: center;
+    color: beige;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-container1{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: bisque;
+}
+
+.quotecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: darksalmon;
+   
+}
+
+.cardflip{
+    transform: rotateY(180deg);
+}
+
+.cardfront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: rgb(52, 51, 51);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cardback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: darksalmon;
+    color: rgb(52, 51, 51);
+    transform: rotateY(180deg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container2{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: bisque;
+}
+
+.songcard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+    background-color: darksalmon;
+}
+
+.card-container3{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: bisque;
+}
+
+.funnyaffirm{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+    background-color: darksalmon;
+}
